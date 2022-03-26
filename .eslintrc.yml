@@ -1,0 +1,66 @@
+env:
+  browser: true
+  node: true
+extends:
+  - plugin:react/recommended
+  # - plugin:import/recommended
+  - eslint:recommended
+  - airbnb
+  - prettier
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2020
+  sourceType: module
+plugins:
+  - react
+  - '@typescript-eslint'
+  - react-hooks
+  # - import
+  - prettier
+
+rules:
+  # 0 = off, 1 = warn, 2 = error
+  'no-unused-vars': [2, { varsIgnorePattern: '^_', argsIgnorePattern: '^_', ignoreRestSiblings: true }]
+  'no-undef': 2
+  'no-console': [2, { allow: ['error', 'warn', 'info', 'assert'] }]
+  'comma-dangle': ['error', 'only-multiline']
+  'no-var': 2
+  'one-var-declaration-per-line': 2
+  'prefer-const': 2
+  'no-const-assign': 2
+  'no-use-before-define': [2, { 'functions': false, 'classes': false }]
+  'eqeqeq': [2, 'always', { 'null': 'ignore' }]
+
+  # https://github.com/benmosher/eslint-plugin-import/pull/334
+  'import/no-duplicates': 2
+  'import/first': 2
+  'import/newline-after-import': 2
+  'import/order':
+    [
+      2,
+      {
+        'newlines-between': 'always',
+        'alphabetize': { 'order': 'asc' },
+        'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+      },
+    ]
+
+  'react/prop-types': 0
+  'react/jsx-no-multiline-js': 0
+  'react/jsx-equals-spacing': 0
+  'react/no-find-dom-node': 0
+  'react/react-in-jsx-scope': 0
+  'react/jsx-key': 2
+  'react/no-string-refs': 2
+  'react/self-closing-comp': 2
+  'react/no-deprecated': 2
+  'react/jsx-no-bind': 2
+  # to be confirmed
+  'react/display-name': 0 # 2?
+  'react/jsx-no-target-blank': 0
+  'react/no-unescaped-entities': 0
+
+  'react-hooks/rules-of-hooks': 2
+  'react-hooks/exhaustive-deps': 2

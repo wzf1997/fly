@@ -1,0 +1,44 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "ts": "tsc --init",
+    "lint": "",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "commander": "^9.1.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3",
+    "webpack": "^5.70.0"
+  },
+  "lint-staged": {
+    "*.@(js|ts|tsx)": ["eslint --ext .ts,.tsx,.js --fix", "prettier --write"],
+    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
+    "*.md": ["prettier --parser markdown --write"],
+    "*.json": ["prettier --parser json --write"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "汪正飞 <wangzhengfei@shizhuang-inc.com>",
+  "license": "MIT"
+}
