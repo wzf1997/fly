@@ -1,7 +1,9 @@
 {
   "name": "root",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "ts": "tsc --init",
     "lint": "",
@@ -36,10 +38,19 @@
     "webpack": "^5.70.0"
   },
   "lint-staged": {
-    "*.@(js|ts|tsx)": ["eslint --ext .ts,.tsx,.js --fix", "prettier --write"],
-    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
-    "*.md": ["prettier --parser markdown --write"],
-    "*.json": ["prettier --parser json --write"]
+    "*.@(js|ts|tsx)": [
+      "eslint --ext .ts,.tsx,.js --fix",
+      "prettier --write"
+    ],
+    "*.@(yml|yaml)": [
+      "prettier --parser yaml --write"
+    ],
+    "*.md": [
+      "prettier --parser markdown --write"
+    ],
+    "*.json": [
+      "prettier --parser json --write"
+    ]
   },
   "husky": {
     "hooks": {

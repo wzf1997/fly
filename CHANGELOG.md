@@ -4,15 +4,17 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.2.4](https://github.com/wzf1997/fly/compare/v1.2.0...v1.2.4) (2022-03-27)
 
+
 ### 👷 Continuous Integration | CI 配置
 
-- 增加 post-commit git hook ([7a10ba1](https://github.com/wzf1997/fly/commit/7a10ba1f67cef2762d7618b500d03d36aa8ff91a))
+* 增加post-commit git hook ([7a10ba1](https://github.com/wzf1997/fly/commit/7a10ba1f67cef2762d7618b500d03d36aa8ff91a))
+
 
 ### 🚀 Chore | 构建/工程依赖/工具
 
-- **release:** 1.2.1 ([4849203](https://github.com/wzf1997/fly/commit/484920345babe546209f0f381af0eb0c49419bb6))
-- **release:** 1.2.2 ([b46a6bb](https://github.com/wzf1997/fly/commit/b46a6bb20cea452363a75ca630adc154ef1c62ca))
-- **release:** 1.2.3 ([a3f748d](https://github.com/wzf1997/fly/commit/a3f748d66016fb467c0e14799cc543d824485cdd))
+* **release:** 1.2.1 ([4849203](https://github.com/wzf1997/fly/commit/484920345babe546209f0f381af0eb0c49419bb6))
+* **release:** 1.2.2 ([b46a6bb](https://github.com/wzf1997/fly/commit/b46a6bb20cea452363a75ca630adc154ef1c62ca))
+* **release:** 1.2.3 ([a3f748d](https://github.com/wzf1997/fly/commit/a3f748d66016fb467c0e14799cc543d824485cdd))
 
 ### [1.2.3](https://github.com/wzf1997/fly/compare/v1.2.0...v1.2.3) (2022-03-27)
 
