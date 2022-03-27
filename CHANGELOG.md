@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.16](https://github.com/wzf1997/fly/compare/v1.2.15...v1.2.16) (2022-03-27)
+
+### ✏️ Documentation | 文档
+
+- readme.md 修改 ([058f42c](https://github.com/wzf1997/fly/commit/058f42c514defd13de39e43c356205ddb6455479))
+
 ### [1.2.15](https://github.com/wzf1997/fly/compare/v1.2.14...v1.2.15) (2022-03-27)
 
 ### 💄 Styles | 风格
