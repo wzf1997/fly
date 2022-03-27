@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.15](https://github.com/wzf1997/fly/compare/v1.2.14...v1.2.15) (2022-03-27)
+
+### 💄 Styles | 风格
+
+- 风格修改 ([5d91091](https://github.com/wzf1997/fly/commit/5d91091d7ad69838a19163d0267a09b575313caf))
+
 ### [1.2.14](https://github.com/wzf1997/fly/compare/v1.2.0...v1.2.14) (2022-03-27)
 
 ### 🚀 Chore | 构建/工程依赖/工具
