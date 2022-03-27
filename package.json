@@ -6,7 +6,8 @@
     "ts": "tsc --init",
     "lint": "",
     "prepare": "husky install",
-    "push": "standard-version"
+    "release": "standard-version",
+    "release:first": "yarn release -- --first-release "
   },
   "repository": "https://github.com/wzf1997/fly",
   "devDependencies": {
