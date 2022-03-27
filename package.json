@@ -5,7 +5,8 @@
   "scripts": {
     "ts": "tsc --init",
     "lint": "",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "push": "standard-version"
   },
   "repository": "https://github.com/wzf1997/fly",
   "devDependencies": {
