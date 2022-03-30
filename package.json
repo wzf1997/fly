@@ -3,11 +3,10 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
-    "ts": "tsc --init",
-    "lint": "",
     "prepare": "husky install",
     "release": "standard-version",
-    "release:first": "yarn release -- --first-release "
+    "release:first": "yarn release -- --first-release ",
+    "test": "  ts-node --project ./tsconfigs/cmj.json -r tsconfig-paths/register  ./scripts/test.ts "
   },
   "repository": "https://github.com/wzf1997/fly",
   "devDependencies": {
@@ -21,6 +20,7 @@
     "eslint": "^8.12.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
