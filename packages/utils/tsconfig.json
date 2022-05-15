@@ -1,8 +1,11 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es2017",
-    "outDir": "./dist"
+    "composite": true,
+    "outDir": "esm",
+    "rootDir": "src",
+    "target": "ES2018",
+    "module": "ESNEXT"
   },
-  "include": ["./index.ts"] // * 匹配0或者多个字符 （不包括目录分割符） **/递归匹配任意子目录
+  "include": ["src/index.ts"] // * 匹配0或者多个字符 （不包括目录分割符） **/递归匹配任意子目录
 }

@@ -1,6 +1,9 @@
 {
-  "name": "util",
+  "name": "@fly/utils",
   "version": "1.0.0",
   "main": "index.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "loadsh": "^0.0.4"
+  }
 }

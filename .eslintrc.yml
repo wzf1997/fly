@@ -18,6 +18,11 @@ plugins:
   - react-hooks
   - prettier
 
+settings:
+  import/resolver:
+    typescript:
+      alwaysTryTypes: true
+
 rules:
   # 0 = off, 1 = warn, 2 = error
   'no-unused-vars': [2, { varsIgnorePattern: '^_', argsIgnorePattern: '^_', ignoreRestSiblings: true }]
@@ -37,7 +42,7 @@ rules:
   'import/newline-after-import': 2
   'import/order':
     [
-      2,
+      0,
       {
         'newlines-between': 'always',
         'alphabetize': { 'order': 'asc' },
@@ -59,7 +64,7 @@ rules:
   'react/display-name': 0 # 2?
   'react/jsx-no-target-blank': 0
   'react/no-unescaped-entities': 0
-
+  'react/jsx-filename-extension': [1, { 'extensions': ['.tsx', '.ts'] }]
   'react-hooks/rules-of-hooks': 2
   'react-hooks/exhaustive-deps': 2
 
@@ -75,6 +80,8 @@ overrides:
     parserOptions:
       project:
         - ./tsconfig.json
+        - ./packages/**/tsconfig.json
+        - ./scripts/tsconfig.json
     rules:
       'no-undef': 0
       # TypeScript declare merge
@@ -84,13 +91,9 @@ overrides:
       'no-dupe-class-members': 0
       'no-case-declarations': 0
       'no-duplicate-imports': 0
+      'import/no-extraneous-dependencies': 0
       # TypeScript Interface and Type
       'no-use-before-define': 0
-      # 'import/parsers':
-      #   - .ts
-      #   - .tsx
-      # 'import/resolver':
-      #   typescript: { 'alwaysTryTypes': true, 'project': 'packages/*/tsconfig.json' }
       '@typescript-eslint/adjacent-overload-signatures': 2
       '@typescript-eslint/await-thenable': 2
       '@typescript-eslint/consistent-type-assertions': 2

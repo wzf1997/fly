@@ -1,8 +1,16 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "target": "esnext",
+    "composite": true,
+    "jsx": "react-jsx",
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*", "../../types/index.d.ts"],
+  "references": [
+    {
+      "path": "./../utils"
+    }
+  ]
 }

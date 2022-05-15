@@ -2,8 +2,8 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "module": "CommonJS",
-    "target": "ES2018",
+    "esModuleInterop": true,
     "noEmit": true
   },
-  "include": ["./test.ts"]
+  "include": ["./**/*"] // * 匹配0或者多个字符 （不包括目录分割符） **/递归匹配任意子目录
 }

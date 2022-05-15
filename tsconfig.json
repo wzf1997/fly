@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "ES2015",
     "module": "ESNext",
     "lib": ["dom", "es6", "es2019", "es2020", "esnext"],
     "skipLibCheck": true,
@@ -12,7 +12,7 @@
     "removeComments": true, // 移除注解
     "noImplicitAny": true, // 禁止使用any
     "strictNullChecks": true,
-    "preserveConstEnums": false, // 枚举类型是否生成 映射代码
+    "preserveConstEnums": true, // 枚举类型是否生成 映射代码
     "strictFunctionTypes": true,
     "noImplicitThis": true, // this 隐式具有 any 类型
     "noUnusedLocals": true,
@@ -26,9 +26,9 @@
     "resolveJsonModule": true,
     "baseUrl": "./packages", // 根路径 路径映射,
     "paths": {
-      "@fly/util": ["./utils/index.ts"]
+      "@fly/util": ["./utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "**/dist/**/*", "**/esm/**/*"],
-  "include": ["./types", "./packages", "./scripts/test.ts"] // * 匹配0或者多个字符 （不包括目录分割符） **/递归匹配任意子目录
+  "include": ["./types", "./packages"] // * 匹配0或者多个字符 （不包括目录分割符） **/递归匹配任意子目录
 }
