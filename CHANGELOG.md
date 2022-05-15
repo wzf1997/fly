@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.21](https://github.com/wzf1997/fly/compare/v1.2.20...v1.2.21) (2022-05-15)
+
 ### [1.2.20](https://github.com/wzf1997/fly/compare/v1.2.18...v1.2.20) (2022-05-15)
 
 ### 👷 Continuous Integration | CI 配置
