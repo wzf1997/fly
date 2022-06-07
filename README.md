@@ -230,7 +230,7 @@ npx lerna init
 作为一个 ts 项目， 在项目根目录安装 ts
 
 ```
-yarn add typesript -D -W
+yarn add typescript  -D -W
 ```
 
 首先在项目中生成 tsconfig.json
