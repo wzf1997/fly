@@ -1,7 +1,7 @@
 const path = require('path')
 
 const rootPath = path.join(__dirname, '..', './packages')
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+// const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const HtmlWebPack = require('html-webpack-plugin')
 
 const baseWebpackConfig = {
@@ -57,4 +57,4 @@ const baseWebpackConfig = {
   ],
 }
 
-export default baseWebpackConfig
+// export default baseWebpackConfig

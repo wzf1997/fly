@@ -6,8 +6,8 @@
     "prepare": "husky install",
     "release": "standard-version",
     "release:first": "yarn release -- --first-release ",
-    "dev": "webpack serve --config  ./scripts/webpack.dev.ts",
-    "build": " webpack --config ./scripts/webpack.base.ts",
+    "dev": "webpack serve --config  ./scripts/webpack.dev.ts --mode development",
+    "build": " webpack --config ./scripts/webpack.base.ts --mode production",
     "clean": "rm -rf node_modules",
     "check": "tsc --noEmit",
     "ts": " ts-node --project ./tsconfigs/cmj.json -r tsconfig-paths/register"
@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "chalk": "^5.0.1",
+    "cz-customizable": "^6.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -75,8 +76,13 @@
       "pre-commit": "lint-staged"
     }
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "version": "1.2.21",
-  "main": "index.js",
+  "main": "src/index.ts",
   "author": "fly",
   "license": "MIT"
 }
