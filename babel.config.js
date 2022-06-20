@@ -25,6 +25,15 @@ module.exports = function (api) {
     ],
     plugins: [
       [
+        'import',
+        {
+          libraryName: 'antd',
+          libraryDirectory: 'es',
+          style: 'css',
+        },
+        'antd',
+      ],
+      [
         '@babel/plugin-transform-runtime',
         {
           regenerator: true,

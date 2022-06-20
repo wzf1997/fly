@@ -1,19 +1,9 @@
 // import React from 'react'
-import add from '@fly/util'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+
 import ReactDom from 'react-dom'
+import { Button } from 'antd'
+import style from './index.scss'
+import Entry from './pages/entry'
 
-import Baner from './assets/baner.png'
-
-function App() {
-  return <div>我是测试的222 </div>
-}
-
-ReactDom.render(
-  <div>
-    <App />
-    {add(1, 2)}
-    <img src={Baner} alt="" />
-  </div>,
-  document.getElementById('root'),
-)
+ReactDom.render(<Entry />, document.getElementById('root'))

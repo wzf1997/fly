@@ -1,2 +1,2 @@
 extends:
-  - '../../.eslintrc.yml'
+  - '../../.eslintrc.json'
