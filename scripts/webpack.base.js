@@ -13,6 +13,7 @@ const baseWebpackConfig = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist'),
     clean: true, // 每次打包之前 清空 dist目录
+    publicPath: '/', // 公共路径增加
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

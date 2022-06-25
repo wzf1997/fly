@@ -7,7 +7,7 @@ import ImageDiff from './image-diff'
 export default function CanvasHome() {
   return (
     <Routes>
-      <Route path={RouterPath.canvas.imageDiff} element={ImageDiff} />
+      <Route path={RouterPath.canvas.imageDiff} element={<ImageDiff />} />
     </Routes>
   )
 }

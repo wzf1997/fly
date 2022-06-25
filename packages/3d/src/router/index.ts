@@ -1,10 +1,10 @@
 const RouterPath = {
   canvas: {
-    home: 'canvas',
+    home: 'canvas/*',
     imageDiff: 'image-diff',
   },
   three: {
-    home: '/three',
+    home: 'three/*',
   },
 }
 
