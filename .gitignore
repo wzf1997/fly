@@ -12,3 +12,6 @@ esm
 
 # misc
 .DS_Store
+
+# idea
+.idea
