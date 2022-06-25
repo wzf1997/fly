@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/wzf1997/fly/compare/v1.2.21...v1.3.0) (2022-06-25)
+
+### Features
+
+- eslint 修改 ([92e3d49](https://github.com/wzf1997/fly/commit/92e3d49792ee545cba3b3c2210602f10dc94c78d))
+- **projects:** 项目结构和 commit 工程化修复 ([123dfa6](https://github.com/wzf1997/fly/commit/123dfa6baeec3a7d0c3380eaef955f827919b5ed))
+
+### Bug Fixes
+
+- 冲突解决 ([806e8c3](https://github.com/wzf1997/fly/commit/806e8c36b231fcaf3d5790322d42970e51f06850))
+
 ### [1.2.21](https://github.com/wzf1997/fly/compare/v1.2.20...v1.2.21) (2022-05-15)
 
 ### [1.2.20](https://github.com/wzf1997/fly/compare/v1.2.18...v1.2.20) (2022-05-15)
