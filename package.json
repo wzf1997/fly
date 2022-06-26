@@ -3,6 +3,7 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
+    "preinstall": "npx only-allow yarn",
     "prepare": "husky install",
     "release": "standard-version",
     "release:first": "yarn release -- --first-release ",
@@ -51,6 +52,7 @@
     "lint-staged": "^12.3.7",
     "mini-css-extract-plugin": "^2.6.0",
     "odiff-bin": "^2.5.0",
+    "only-allow": "^1.1.1",
     "portfinder": "^1.0.28",
     "postcss-loader": "^7.0.0",
     "postcss-px-to-viewport": "^1.1.1",
