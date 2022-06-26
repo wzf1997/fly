@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/wzf1997/fly/compare/v1.3.2...v1.3.3) (2022-06-26)
+
+### Bug Fixes
+
+- workflow xiugai ([8a23edb](https://github.com/wzf1997/fly/commit/8a23edbf8b8b947034c44d14a4d75c15c08066a2))
+
 ### [1.3.2](https://github.com/wzf1997/fly/compare/v1.3.1...v1.3.2) (2022-06-26)
 
 ### [1.3.1](https://github.com/wzf1997/fly/compare/v1.3.0...v1.3.1) (2022-06-25)
