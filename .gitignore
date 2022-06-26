@@ -5,11 +5,12 @@ node_modules
 /packages/**/node_modules
 npm-debug.log*
 yarn-error.log
-.eslintcache
 
 # production
 dist
 esm
+
+.eslintcache
 
 # misc
 .DS_Store
