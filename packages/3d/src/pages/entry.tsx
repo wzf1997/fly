@@ -17,9 +17,7 @@ export default function Entry() {
     <BrowserRouter basename="fly">
       <Routes>
         <Route path={RouterPath.canvas.home} element={<CanvasHome />} />
-        {/* <Route path={RouterPath.canvas.imageDiff} element={<ImageDiff />} /> */}
         <Route path="*" element={<NotFound />} />
-        {/* <Outlet /> */}
       </Routes>
     </BrowserRouter>
   )

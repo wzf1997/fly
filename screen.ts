@@ -8,9 +8,7 @@ function sleep(time: number) {
 }
 
 async function start(url: string) {
-  console.error(launch)
   const browser = await launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] }) // 启动无头浏览器
-  console.error(browser)
   const page = await browser.newPage()
   await page.setViewport({ width: 375, height: 812 })
   await page.goto(url)
