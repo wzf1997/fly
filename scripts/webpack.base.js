@@ -5,6 +5,8 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const HtmlWebPack = require('html-webpack-plugin')
 const MinCssExtractPlugin = require('mini-css-extract-plugin')
 
+const isDev = process.env.MODE === 'development'
+
 const baseWebpackConfig = {
   mode: 'development',
   devtool: 'inline-source-map',
@@ -13,7 +15,7 @@ const baseWebpackConfig = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist'),
     clean: true, // 每次打包之前 清空 dist目录
-    publicPath: '/', // 公共路径增加
+    publicPath: isDev ? '/' : '/fly', // 公共路径增加
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -130,7 +132,7 @@ const baseWebpackConfig = {
     new MinCssExtractPlugin({
       // 生产模式下 记得 加 hash 模式 有利于走浏览器缓存
       //  // using hash on dev mode is unfriendly on both building & hmr
-      filename: '[name].css',
+      filename: isDev ? '[name].css' : '[name].[contenthash:8].css',
     }),
   ],
 }

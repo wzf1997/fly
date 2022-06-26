@@ -6,8 +6,8 @@
     "prepare": "husky install",
     "release": "standard-version",
     "release:first": "yarn release -- --first-release ",
-    "dev": "webpack serve --config  ./scripts/webpack.dev.js --mode development",
-    "build": " webpack --config ./scripts/webpack.base.js --mode production",
+    "dev": " cross-env MODE=development webpack serve --config  ./scripts/webpack.dev.js ",
+    "build": "cross-env MODE=production webpack --config ./scripts/webpack.base.js ",
     "clean": "rm -rf node_modules",
     "check": "tsc --noEmit",
     "ts": " ts-node --project ./tsconfigs/cmj.json -r tsconfig-paths/register"
@@ -31,8 +31,10 @@
     "commitlint": "^16.2.3",
     "conventional-changelog-cli": "^2.2.2",
     "core-js": "^3.21.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.9",
+    "cz-customizable": "^6.3.0",
     "eslint": "^8.12.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -66,10 +68,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "chalk": "^5.0.1",
-    "cz-customizable": "^6.3.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "chalk": "^5.0.1"
   },
   "resolutions": {
     "react": "17.0.2",
