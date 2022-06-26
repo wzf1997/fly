@@ -128,6 +128,10 @@ const baseWebpackConfig = {
       filename: 'index.html',
       template: path.resolve(__dirname, '../public/index.html'),
     }),
+    new HtmlWebPack({
+      filename: '404.html',
+      template: path.resolve(__dirname, '../public/index.html'),
+    }),
 
     new MinCssExtractPlugin({
       // 生产模式下 记得 加 hash 模式 有利于走浏览器缓存
