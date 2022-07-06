@@ -92,7 +92,7 @@
       "path": "node_modules/cz-customizable"
     }
   },
-  "version": "1.3.9",
+  "version": "1.3.10",
   "main": "src/index.ts",
   "author": "fly",
   "license": "MIT"
