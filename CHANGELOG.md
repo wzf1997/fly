@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.6](https://github.com/wzf1997/fly/compare/v1.3.5...v1.3.6) (2022-07-06)
+
+### Bug Fixes
+
+- delete 代码 ([a8f4edb](https://github.com/wzf1997/fly/commit/a8f4edbe640f53ba9a997cd8e82f7136178da29a))
+
 ### [1.3.5](https://github.com/wzf1997/fly/compare/v1.3.4...v1.3.5) (2022-06-26)
 
 ### Bug Fixes
