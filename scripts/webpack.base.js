@@ -11,6 +11,13 @@ const baseWebpackConfig = {
   mode: 'development',
   devtool: 'inline-source-map',
   entry: path.join(rootPath, '3d/src/index.tsx'),
+  // webpack 5的持久化缓存
+  cache: {
+    type: 'filesystem',
+    buildDependencies: {
+      config: [path.join(__dirname, '..', './babel.config.js')],
+    },
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist'),

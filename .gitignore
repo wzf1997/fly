@@ -3,6 +3,7 @@ node_modules
 # dependencies
 /node_modules
 /packages/**/node_modules
+/packages/nest/
 npm-debug.log*
 yarn-error.log
 

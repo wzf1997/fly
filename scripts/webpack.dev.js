@@ -8,7 +8,6 @@ const portFinder = require('portfinder')
 
 const devConfig = {
   mode: 'development',
-  cache: true,
   devServer: {
     historyApiFallback: true,
     // 默认为true
