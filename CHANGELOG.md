@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/wzf1997/fly/compare/v1.3.11...v1.4.0) (2022-08-29)
+
+### Features
+
+- esbuild-import-loader 开发 ([5093083](https://github.com/wzf1997/fly/commit/50930836c2633ec47796475ba8289db03113f694))
+
 ### [1.3.11](https://github.com/wzf1997/fly/compare/v1.3.10...v1.3.11) (2022-07-06)
 
 ### [1.3.10](https://github.com/wzf1997/fly/compare/v1.3.9...v1.3.10) (2022-07-06)
