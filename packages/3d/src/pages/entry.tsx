@@ -4,12 +4,18 @@ import RouterPath from '../router'
 import CanvasHome from './canvas'
 import ImageDiff from './canvas/image-diff'
 
+import { Button } from 'antd'
+
 function Home() {
   return <div>我是home 页</div>
 }
 
 function NotFound() {
-  return <div>我是404 页</div>
+  return (
+    <div>
+      我是404 页<Button>点击</Button>
+    </div>
+  )
 }
 
 export default function Entry() {

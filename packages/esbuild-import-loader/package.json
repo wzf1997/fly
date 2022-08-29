@@ -1,0 +1,38 @@
+{
+  "name": "esbuild-import-loader",
+  "version": "1.0.0",
+  "description": "esbuild 编译tsx, 支持按需加载",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --minify --dts --treeshake"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzf1997/count-compoent-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wzf1997/count-compoent-plugin/issues"
+  },
+  "homepage": "https://github.com/wzf1997/count-component-plugin#readme",
+  "keywords": ["esbuild", "import", "webpack"],
+  "devDependencies": {
+    "@types/babel__traverse": "^7.18.0",
+    "tsup": "^6.2.3"
+  },
+  "peerDependencies": {
+    "webpack": "^5.0.0",
+    "babel": "^7.0.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.15.5",
+    "@babel/generator": "^7.18.13",
+    "@babel/parser": "^7.18.13",
+    "@babel/types": "^7.17.0",
+    "@babel/traverse": "^7.18.13",
+    "@babel/helper-module-imports": "^7.12.13"
+  }
+}

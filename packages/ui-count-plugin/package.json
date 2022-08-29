@@ -32,10 +32,9 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.2",
-    "webpack": "^5.28.0"
+    "babel": "^6.23.0"
   },
   "dependencies": {
-    "babel": "^6.23.0",
     "chalk": "^4.1.1",
     "to-excel": "^2.2.5"
   },
