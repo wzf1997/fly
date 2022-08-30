@@ -1,13 +1,18 @@
 const parser = require('@babel/parser')
+import traverse from '@babel/traverse'
+import * as types from '@babel/types'
 const { addSideEffect } = require('@babel/helper-module-imports')
 import generate from '@babel/generator'
 import { LoaderContext } from 'webpack'
-import { EsbuildImportLoader } from '../type'
-import { transform } from 'esbuild'
-import traverse from '@babel/traverse'
-import * as types from '@babel/types'
+import { TransformOptions, transform } from 'esbuild'
 
-async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoader>, source: string) {
+export type EsbuildImportLoader = Omit<TransformOptions, 'sourcemap' | 'sourcefile'> & {
+  libraryName: string
+  customStyle?: (importName: string) => string
+  customName: (importName: string) => string
+}
+
+export async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoader>, source: string) {
   // 1. 获取异步回调函数
   this.cacheable && this.cacheable()
   const callback = this.async()
@@ -29,7 +34,7 @@ async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoader>, sou
           let node = path.node
           let specifiers = node.specifiers
           if (libraryName == node.source.value && !types.isImportDeclaration(specifiers[0])) {
-            let newImport: any[] = []
+            let newImport: any = []
             specifiers.forEach((specifier) => {
               newImport.push(
                 types.importDeclaration(
@@ -54,5 +59,3 @@ async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoader>, sou
     callback(error)
   }
 }
-
-module.exports = EsbuildImportIoader

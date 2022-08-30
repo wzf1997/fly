@@ -1,12 +1,16 @@
 {
   "name": "esbuild-import-loader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "esbuild 编译tsx, 支持按需加载",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --minify --dts --treeshake"
+    "build": "tsup src/index.ts --format esm,cjs --legacy-output --minify --dts --treeshake",
+    "build:tsc": "tsc"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
