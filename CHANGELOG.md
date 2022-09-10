@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/wzf1997/fly/compare/v1.6.1...v1.6.2) (2022-09-10)
+
+### Bug Fixes
+
+- esbuild 打包代码修复 ([1d5e2dc](https://github.com/wzf1997/fly/commit/1d5e2dc8b2845ec435154dbef7a125531995144d))
+
 ### [1.6.1](https://github.com/wzf1997/fly/compare/v1.6.0...v1.6.1) (2022-08-30)
 
 ## [1.6.0](https://github.com/wzf1997/fly/compare/v1.4.0...v1.6.0) (2022-08-30)
