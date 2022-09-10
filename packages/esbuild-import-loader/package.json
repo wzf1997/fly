@@ -1,36 +1,38 @@
 {
   "name": "esbuild-import-loader",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "esbuild 编译tsx, 支持按需加载",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --legacy-output --minify --dts --treeshake",
-    "build:tsc": "tsc"
+    "build:tsc": "tsc",
+    "clean": "rm -rf ./dist"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wzf1997/count-compoent-plugin.git"
+    "url": "git+https://github.com/wzf1997/fly/tree/main/packages/esbuild-import-loader"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wzf1997/count-compoent-plugin/issues"
+    "url": "https://github.com/wzf1997/fly/issues"
   },
-  "homepage": "https://github.com/wzf1997/count-component-plugin#readme",
-  "keywords": ["esbuild", "import", "webpack"],
+  "homepage": "https://github.com/wzf1997/fly/tree/main/packages/esbuild-import-loader#readme",
+  "keywords": ["esbuild", "import", "webpack", "loader"],
   "devDependencies": {
     "@types/babel__traverse": "^7.18.0",
     "tsup": "^6.2.3"
   },
   "peerDependencies": {
     "webpack": "^5.0.0",
-    "babel": "^7.0.0"
+    "babel": "^6.0.0"
   },
+  "files": ["dist/", "README.md", "CHANGE_LOG.md"],
   "dependencies": {
     "esbuild": "^0.15.5",
     "@babel/generator": "^7.18.13",

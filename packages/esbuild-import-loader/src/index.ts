@@ -11,8 +11,7 @@ export type EsbuildImportLoader = Omit<TransformOptions, 'sourcemap' | 'sourcefi
   customStyle?: (importName: string) => string
   customName: (importName: string) => string
 }
-
-export async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoader>, source: string) {
+async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoader>, source: string) {
   // 1. 获取异步回调函数
   this.cacheable && this.cacheable()
   const callback = this.async()
@@ -59,3 +58,5 @@ export async function EsbuildImportIoader(this: LoaderContext<EsbuildImportLoade
     callback(error)
   }
 }
+
+module.exports = EsbuildImportIoader

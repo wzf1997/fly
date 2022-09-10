@@ -29,11 +29,7 @@ import * as types from '@babel/types'
 const { addSideEffect } = require('@babel/helper-module-imports')
 import generate from '@babel/generator'
 
-const source = `import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
-import RouterPath from '../router'
-import CanvasHome from './canvas'
-import ImageDiff from './canvas/image-diff'
+const source = `
 
 import { Button } from 'antd'
 
@@ -57,6 +53,8 @@ const opts = {
 
 traverse(res, {
   ImportDeclaration: function (path) {
+    console.error(path.node, '/n')
+    console.error(path.node.specifiers)
     let node = path.node
     let specifiers = node.specifiers
     const { library, customName, customStyle } = opts

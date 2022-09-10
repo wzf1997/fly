@@ -20,11 +20,12 @@ function NotFound() {
 
 export default function Entry() {
   return (
-    <BrowserRouter basename="fly">
-      <Routes>
-        <Route path={RouterPath.canvas.home} element={<CanvasHome />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter basename="fly">
+    //   <Routes>
+    //     <Route path={RouterPath.canvas.home} element={<CanvasHome />} />
+    //     <Route path="*" element={<NotFound />} />
+    //   </Routes>
+    // </BrowserRouter>
+    <Home />
   )
 }

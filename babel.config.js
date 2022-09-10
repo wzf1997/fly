@@ -24,15 +24,15 @@ module.exports = function (api) {
       '@babel/preset-react',
     ],
     plugins: [
-      [
-        'import',
-        {
-          libraryName: 'antd',
-          libraryDirectory: 'es',
-          style: 'css',
-        },
-        'antd',
-      ],
+      // [
+      //   'import',
+      //   {
+      //     libraryName: 'antd',
+      //     libraryDirectory: 'es',
+      //     style: 'css',
+      //   },
+      //   'antd',
+      // ],
       [
         '@babel/plugin-transform-runtime',
         {
