@@ -43,6 +43,7 @@
     "conventional-changelog-cli": "^2.2.2",
     "core-js": "^3.21.1",
     "tsc": "^2.0.4",
+    "tinyit": "1.0.12",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.9",

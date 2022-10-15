@@ -8805,6 +8805,11 @@ promise-inflight@^1.0.1:
   resolved "https://registry.npmmirror.com/promise-inflight/-/promise-inflight-1.0.1.tgz"
   integrity sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==
 
+"promise-nodeify@>= 0.1":
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/promise-nodeify/-/promise-nodeify-3.0.1.tgz#f0f5d9720ee9ec71dd2bfa92667be504c10229c2"
+  integrity sha512-ghsSuzZXJX8iO7WVec2z7GI+Xk/EyiD+JZK7AZKhUqYfpLa/Zs4ylUD+CwwnKlG6G3HnkUPMAi6PO7zeqGKssg==
+
 promise-retry@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmmirror.com/promise-retry/-/promise-retry-2.0.1.tgz"
@@ -8846,6 +8851,11 @@ proxy-addr@~2.0.7:
   dependencies:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
+
+"proxying-agent@>= 2.1":
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/proxying-agent/-/proxying-agent-2.4.0.tgz#6796549fc46bf3423554440f64a4449220f9014d"
+  integrity sha512-b9vDqIcViJZVsWPpQlp9Py74u+Wqd0a+kMkkg7zX58mwNtrNbOChNlRTM7lUrlpiwNzyJCV8+5D8rnZYLDFh7Q==
 
 psl@^1.1.28:
   version "1.8.0"
@@ -10734,6 +10744,21 @@ thunky@^1.0.2:
   version "1.1.0"
   resolved "https://registry.npmmirror.com/thunky/-/thunky-1.1.0.tgz"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
+
+tinify@^1.6.0-beta.2:
+  version "1.6.1"
+  resolved "https://registry.npmjs.org/tinify/-/tinify-1.6.1.tgz#b27a032c447ebddd4231007489069a434ef72b5e"
+  integrity sha512-9XITdFE+p3+W/7HDgDEfxETbAh0vDdul33qo81P0Q+TNR8l6TALDb52MMhs7fWz7i4Pp3y1VdVYEy4EyiF4gUw==
+  dependencies:
+    promise-nodeify ">= 0.1"
+    proxying-agent ">= 2.1"
+
+tinyit@1.0.12:
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/tinyit/-/tinyit-1.0.12.tgz#14e452c8137b2c66e2563ec2b04ec0890412b01c"
+  integrity sha512-7t/8EzAmjxgiiV0QnoXQL37+o+w0jgW490e8tNrzXAlPRgwAPnVzkeS+8/8sX4RVENflXq+FPokZczWjKzSaug==
+  dependencies:
+    tinify "^1.6.0-beta.2"
 
 tmp@^0.0.33:
   version "0.0.33"
