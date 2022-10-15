@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/wzf1997/fly/compare/v1.6.2...v1.7.0) (2022-10-15)
+
+### Features
+
+- 手写题提交 ([0795204](https://github.com/wzf1997/fly/commit/07952047d09025e6f3f18f4d01b606ed94939227))
+
 ### [1.6.2](https://github.com/wzf1997/fly/compare/v1.6.1...v1.6.2) (2022-09-10)
 
 ### Bug Fixes
