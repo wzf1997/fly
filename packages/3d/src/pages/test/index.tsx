@@ -1,13 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 import RouterPath from '@/router'
+import { SeqAnimate } from './seqAnimate'
 
-import ImageDiff from './image-diff'
-
-export default function CanvasHome() {
+export default function Test() {
   return (
     <Routes>
-      <Route path={RouterPath.canvas.imageDiff} element={<ImageDiff />} />
+      <Route path={RouterPath.test.step} element={<SeqAnimate />} />
     </Routes>
   )
 }

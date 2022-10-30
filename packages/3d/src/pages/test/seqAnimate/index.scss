@@ -1,0 +1,26 @@
+$url: 'https://ztifly.oss-cn-hangzhou.aliyuncs.com/demo1.png';
+
+.wrapper {
+  width: 70px;
+  height: 101px;
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.step {
+  background-image: url($url);
+  width: 700px;
+  height: 101px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: move 5s steps(10) infinite;
+}

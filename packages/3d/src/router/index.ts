@@ -6,6 +6,10 @@ const RouterPath = {
   three: {
     home: 'three/*',
   },
+  test: {
+    home: 'demo/*',
+    step: 'step',
+  },
 }
 
 export default RouterPath

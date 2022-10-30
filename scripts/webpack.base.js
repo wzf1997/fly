@@ -21,33 +21,52 @@ const baseWebpackConfig = {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
       '@fly/util': path.join(rootPath, 'utils/src'),
-      '@pages': path.join(rootPath, '3d/src'),
+      '@': path.join(rootPath, '3d/src'),
     },
     mainFiles: ['index', 'main'],
   },
   module: {
     rules: [
-      {
-        // 同时认识ts jsx js tsx 文件
-        test: /\.(t|j)sx?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: path.join(rootPath, 'esbuild-import-loader/dist/index.js'),
-            options: {
-              loader: 'tsx',
-              target: 'esnext',
-              libraryName: 'antd',
-              // customName: (name) => {
-              //   return `antd/lib/${name}`
-              // },
-              // customStyle: (name) => {
-              //   return `antd/lib/${name}/style/index.css`
-              // },
-            },
-          },
-        ],
-      },
+      // {
+      //   // 同时认识ts jsx js tsx 文件
+      //   test: /\.(t|j)sx?$/,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     // {
+      //     //   test: /\.tsx?$/,
+      //     //   use: [
+      //     //     {
+      //     //       loader: 'ts-loader',
+      //     //       options: {
+      //     //         transpileOnly: true,
+      //     //         happyPackMode: true,
+      //     //         configFile: path.join(__dirname, '..', './tsconfig.json'),
+      //     //         experimentalWatchApi: true,
+      //     //         // getCustomTransformers: path.join(__dirname, 'ts-transformers'),
+      //     //         compilerOptions: {
+      //     //           jsx: 'react-jsx',
+      //     //         },
+      //     //       },
+      //     //     },
+      //     //   ],
+      //     //   exclude: /node_modules/,
+      //     // },
+      //     // {
+      //     //   loader: path.join(rootPath, 'esbuild-import-loader/dist/index.js'),
+      //     //   options: {
+      //     //     loader: 'tsx',
+      //     //     target: 'esnext',
+      //     //     libraryName: 'antd',
+      //     //     // customName: (name) => {
+      //     //     //   return `antd/lib/${name}`
+      //     //     // },
+      //     //     // customStyle: (name) => {
+      //     //     //   return `antd/lib/${name}/style/index.css`
+      //     //     // },
+      //     //   },
+      //     // },
+      //   ],
+      // },
       // {
       //   // 同时认识ts jsx js tsx 文件
       //   test: /\.(t|j)sx?$/,
@@ -56,25 +75,25 @@ const baseWebpackConfig = {
       //     loader: 'babel-loader?cacheDirectory',
       //   },
       // },
-      // {
-      //   test: /\.tsx?$/,
-      //   use: [
-      //     {
-      //       loader: 'ts-loader',
-      //       options: {
-      //         transpileOnly: true,
-      //         happyPackMode: true,
-      //         configFile: path.join(__dirname, '..', './tsconfig.json'),
-      //         experimentalWatchApi: true,
-      //         // getCustomTransformers: path.join(__dirname, 'ts-transformers'),
-      //         compilerOptions: {
-      //           jsx: 'react-jsx',
-      //         },
-      //       },
-      //     },
-      //   ],
-      //   exclude: /node_modules/,
-      // },
+      {
+        test: /\.tsx?$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+              happyPackMode: true,
+              configFile: path.join(__dirname, '..', './tsconfig.json'),
+              experimentalWatchApi: true,
+              // getCustomTransformers: path.join(__dirname, 'ts-transformers'),
+              compilerOptions: {
+                jsx: 'react-jsx',
+              },
+            },
+          },
+        ],
+        exclude: /node_modules/,
+      },
       {
         test: /\.(png|jpg|gif|svg)$/,
         type: 'asset/resource',
