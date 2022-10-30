@@ -88,7 +88,7 @@
     "react-dom": "17.0.2"
   },
   "lint-staged": {
-    "*.@(js|ts|tsx)": ["eslint --cache --ext .ts,.tsx,.js --fix", "prettier --write"],
+    "*.@(js|ts|tsx)": ["eslint --cache --ext .ts,.tsx,.js --fix", "prettier --write --cache"],
     "*.@(yml|yaml)": ["prettier --parser yaml --write"],
     "*.md": ["prettier --parser markdown --write"],
     "*.json": ["prettier --parser json --write"]
@@ -103,7 +103,7 @@
       "path": "node_modules/cz-customizable"
     }
   },
-  "version": "1.7.0",
+  "version": "1.7.1",
   "main": "src/index.ts",
   "author": "fly",
   "license": "MIT"
